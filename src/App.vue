@@ -1,8 +1,11 @@
 <script setup>
+// import OrgChart from './Pages/OrgChart.vue';
 import ViewCard from './components/ViewCard.vue';
 </script>
 
 <template>
+  <OrgChart/>
+
   <ViewCard/>
 </template>
 
