@@ -14,5 +14,6 @@ import ViewCard from './components/ViewCard.vue';
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  background-color:beige;
 }
 </style>
