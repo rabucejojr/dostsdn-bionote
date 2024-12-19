@@ -14,6 +14,6 @@ import MainDashboard from './Pages/MainDashboard.vue';
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  /* background-color:beige; */
+  background-color:beige;
 }
 </style>

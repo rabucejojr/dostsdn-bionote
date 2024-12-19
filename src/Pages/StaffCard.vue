@@ -38,33 +38,33 @@ import ProfilePicture from '@/components/ProfilePicture.vue';
         </div>
       </div>
       <!-- Last Level: 5 Personnel -->
-      <div class="grid grid-cols-5 gap-4 mt-8 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-4 max-xl:grid-cols-5">
-        <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
-          <ProfilePicture profile="/images/sqy.jpg" />
-          <p class="text-xs mt-2">Stephen Yecyec</p>
-          <p class="text-xs">PTA I</p>
-        </div>
-        <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
-          <ProfilePicture profile="/images/jab.jpg" />
-          <p class="text-xs mt-2">Joverth Butcon, Jr.</p>
-          <p class="text-xs">PTA II</p>
-        </div>
-        <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
-          <ProfilePicture profile="/images/vtd.jpg" />
-          <p class="text-xs mt-2">Vaneza dela Torre</p>
-          <p class="text-xs">PTA I</p>
-        </div>
-        <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
-          <ProfilePicture profile="/images/joa.jpg" />
-          <p class="text-xs mt-2">Jovan Agbu</p>
-          <p class="text-xs">PTA II, B2MEIC</p>
-        </div>
-        <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
-          <ProfilePicture profile="/images/rha.jpg" />
-          <p class="text-xs mt-2">Roger Abucejo, Jr.</p>
-          <p class="text-xs">Support Staff</p>
+        <div class="grid grid-cols-5 gap-4 mt-8 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-4 max-xl:grid-cols-5">
+          <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
+            <ProfilePicture profile="/images/sqy.jpg" />
+            <p class="text-xs mt-2">Stephen Yecyec</p>
+            <p class="text-xs">PTA I</p>
+          </div>
+          <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
+            <ProfilePicture profile="/images/jab.jpg" />
+            <p class="text-xs mt-2">Joverth Butcon, Jr.</p>
+            <p class="text-xs">PTA II</p>
+          </div>
+          <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
+            <ProfilePicture profile="/images/vtd.jpg" />
+            <p class="text-xs mt-2">Vaneza dela Torre</p>
+            <p class="text-xs">PTA I</p>
+          </div>
+          <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
+            <ProfilePicture profile="/images/joa.jpg" />
+            <p class="text-xs mt-2">Jovan Agbu</p>
+            <p class="text-xs">PTA II, B2MEIC</p>
+          </div>
+          <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
+            <ProfilePicture profile="/images/rha.jpg" />
+            <p class="text-xs mt-2">Roger Abucejo, Jr.</p>
+            <p class="text-xs">Support Staff</p>
+          </div>
         </div>
       </div>
-    </div>
   </div>
 </template>
