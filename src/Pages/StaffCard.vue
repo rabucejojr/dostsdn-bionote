@@ -47,14 +47,14 @@ import ProfileImage from '@/components/ProfileImage.vue';
             <ProfileImage profile="/src/assets/images/faf.jpg" />
             <div class="flex flex-col items-center justify-center">
               <p class="text-xs mt-1">Farouk Faisal</p>
-              <p class="text-xs">PTA II</p>
+              <p class="text-xs">PTA I</p>
             </div>
           </div>
           <div class="text-center mb-4 sm:mb-2">
             <ProfileImage profile="/src/assets/images/sqy.jpg" />
             <div class="flex flex-col items-center justify-center">
               <p class="text-xs mt-1">Stephen Yecyec</p>
-              <p class="text-xs">PTA II</p>
+              <p class="text-xs">PTA I</p>
             </div>
           </div>
         </div>
@@ -64,14 +64,14 @@ import ProfileImage from '@/components/ProfileImage.vue';
             <ProfileImage profile="/src/assets/images/jab.jpg" />
             <div class="flex flex-col items-center justify-center">
               <p class="text-xs mt-1">Joverth Butcon, Jr.</p>
-              <p class="text-xs">PTA I</p>
+              <p class="text-xs">PTA II</p>
             </div>
           </div>
           <div class="text-center mb-4 sm:mb-2">
             <ProfileImage profile="/src/assets/images/vtd.jpg" />
             <div class="flex flex-col items-center justify-center">
               <p class="text-xs mt-1">Vaneza dela Torre</p>
-              <p class="text-xs">PTA II</p>
+              <p class="text-xs">PTA I</p>
             </div>
           </div>
           <div class="text-center mb-4 sm:mb-2">
