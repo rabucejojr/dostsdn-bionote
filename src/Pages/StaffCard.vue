@@ -13,7 +13,7 @@ import ProfilePicture from '@/components/ProfilePicture.vue';
       </div>
     </div>
 
-    <div class="max-md:w-3/4 max-lg:w-2/3">
+    <div class="max-md:w-3/4 max-lg:w-2/3 justify-items-center">
       <!-- Middle Level: 4 Personnel -->
       <div class="grid grid-cols-4 gap-4 max-sm:grid-cols-2 max-md:grid-cols-2 max-lg:grid-cols-4">
         <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
