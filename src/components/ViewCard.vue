@@ -32,7 +32,7 @@
           <!-- Clickable Phone Number -->
           <p class="text-sm md:text-base mt-1">
             <a href="tel:+639498820707" class="text-blue-600 hover:underline">
-              +639 49 882 0707
+              +63 949 882 0707
             </a>
           </p>
           <p class="text-sm md:text-base text-gray-600 mt-1 leading-relaxed text-justify">
