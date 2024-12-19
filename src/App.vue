@@ -1,6 +1,5 @@
 <script setup>
 import MainDashboard from './Pages/MainDashboard.vue';
-
 </script>
 
 <template>
