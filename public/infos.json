@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "profile": "/src/assets/images/mpm.jpg",
+    "name": "Mariel Makinano",
+    "designation": "Provincial Director",
+    "location": "Surigao del Norte, Philippines",
+    "email": "mariel.makinano@example.com",
+    "phone": "+63-912-345-6789",
+    "description": "Leading the provincial team with expertise in project management and community development."
+  },
+  {
+    "id": 2,
+    "profile": "/src/assets/images/mgms.jpg",
+    "name": "Mary Grace Sabuero",
+    "designation": "SRS II",
+    "location": "Surigao del Norte, Philippines",
+    "email": "marygrace.sabuero@example.com",
+    "phone": "+63-923-456-7890",
+    "description": "Specializing in research and strategy development for sustainable programs."
+  },
+  {
+    "id": 3,
+    "profile": "/src/assets/images/melr.jpg",
+    "name": "Mildred Eileen Ronsable",
+    "designation": "SRS II",
+    "location": "Surigao del Norte, Philippines",
+    "email": "mildred.ronsable@example.com",
+    "phone": "+63-934-567-8901",
+    "description": "Experienced in program implementation and stakeholder engagement."
+  },
+  {
+    "id": 4,
+    "profile": "/src/assets/images/rjit.jpg",
+    "name": "Rey Jeeve Tambole",
+    "designation": "SRS I",
+    "location": "Surigao del Norte, Philippines",
+    "email": "rey.tambole@example.com",
+    "phone": "+63-945-678-9012",
+    "description": "Focused on research innovation and technical solutions."
+  },
+  {
+    "id": 5,
+    "profile": "/src/assets/images/faf.jpg",
+    "name": "Farouk Faisal",
+    "designation": "PTA I",
+    "location": "Surigao del Norte, Philippines",
+    "email": "farouk.faisal@example.com",
+    "phone": "+63-956-789-0123",
+    "description": "Dedicated to project technical assistance and community support."
+  },
+  {
+    "id": 6,
+    "profile": "/src/assets/images/sqy.jpg",
+    "name": "Stephen Yecyec",
+    "designation": "PTA I",
+    "location": "Surigao del Norte, Philippines",
+    "email": "stephen.yecyec@example.com",
+    "phone": "+63-967-890-1234",
+    "description": "Bringing creativity and problem-solving skills to team projects."
+  },
+  {
+    "id": 7,
+    "profile": "/src/assets/images/jab.jpg",
+    "name": "Joverth Butcon, Jr.",
+    "designation": "PTA II",
+    "location": "Surigao del Norte, Philippines",
+    "email": "joverth.butcon@example.com",
+    "phone": "+63-978-901-2345",
+    "description": "Committed to delivering quality technical and operational support."
+  },
+  {
+    "id": 8,
+    "profile": "/src/assets/images/vtd.jpg",
+    "name": "Vaneza dela Torre",
+    "designation": "PTA I",
+    "location": "Surigao del Norte, Philippines",
+    "email": "vaneza.delatorre@example.com",
+    "phone": "+63-989-012-3456",
+    "description": "Ensures project milestones are met with efficiency and dedication."
+  },
+  {
+    "id": 9,
+    "profile": "/src/assets/images/joa.jpg",
+    "name": "Jovan Agbu",
+    "designation": "PTA II, B2MEIC",
+    "location": "Surigao del Norte, Philippines",
+    "email": "jovan.agbu@example.com",
+    "phone": "+63-901-234-5678",
+    "description": "Skilled in business incubation and entrepreneurial support."
+  },
+  {
+    "id": 10,
+    "profile": "/src/assets/images/rha.jpg",
+    "name": "Roger Abucejo, Jr.",
+    "designation": "Support Staff",
+    "location": "Surigao del Norte, Philippines",
+    "email": "roger.abucejo@example.com",
+    "phone": "+63-912-345-6789",
+    "description": "Provides administrative and logistical support to ensure seamless operations."
+  }
+]
