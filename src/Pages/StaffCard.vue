@@ -8,7 +8,7 @@ import ProfileImage from '@/components/ProfileImage.vue';
     <div class="flex items-center justify-center min-h-screen bg-gray-50">
       <div class="text-center grid grid-cols-5 gap-4 max-sm:grid-cols-2 max-sm:gap-2 max-md:grid-cols-3 max-md:gap-2 max-lg:grid-cols-4 max-lg:gap-2 max-xl:grid-cols-5 max-xl:gap-4">
 
-        <div class="text-center justify-center mb-4 sm:mb-2">
+          <div class="text-center justify-center mb-4 sm:mb-2">
             <div class="flex flex-col items-center justify-center">
               <ProfileImage profile="/images/mpm.jpg" />
             </div>
