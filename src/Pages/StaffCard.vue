@@ -5,7 +5,7 @@ import ProfilePicture from '@/components/ProfilePicture.vue';
 <template>
   <div class="flex flex-col items-center justify-center min-h-screen bg-gray-50">
     <!-- Top Level: Mariel Makinano -->
-    <div class="text-center mb-8">
+    <div class="text-center mb-4">
       <div class="flex flex-col items-center">
           <ProfilePicture profile="/images/mpm.jpg" />
         <p class="text-sm font-semibold mt-2">Mariel Makinano</p>
@@ -38,7 +38,7 @@ import ProfilePicture from '@/components/ProfilePicture.vue';
         </div>
       </div>
       <!-- Last Level: 5 Personnel -->
-        <div class="grid grid-cols-5 gap-4 mt-8 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-4 max-xl:grid-cols-5">
+        <div class="grid grid-cols-5 gap-4 mt-4 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-4 max-xl:grid-cols-5">
           <div class="text-center max-md:flex max-md:flex-col max-md:items-center">
             <ProfilePicture profile="/images/sqy.jpg" />
             <p class="text-xs mt-2">Stephen Yecyec</p>
