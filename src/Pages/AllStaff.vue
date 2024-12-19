@@ -3,7 +3,7 @@ import ProfilePicture from '@/components/ProfilePicture.vue';
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center min-h-screen bg-gray-50">
+  <div class="flex flex-col items-center justify-center min-h-screen bg-gray-200">
     <!-- Top Level: Mariel Makinano -->
     <div class="text-center mb-4">
       <div class="flex flex-col items-center">

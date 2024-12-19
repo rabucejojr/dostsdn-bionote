@@ -1,9 +1,9 @@
 <script setup>
-import StaffCard from './StaffCard.vue';
+import AllStaff from './AllStaff.vue';
 </script>
 
 <template>
   <div class="">
-  <StaffCard/>
+  <AllStaff/>
   </div>
 </template>
