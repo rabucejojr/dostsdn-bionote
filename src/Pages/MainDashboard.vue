@@ -3,7 +3,7 @@ import StaffCard from './StaffCard.vue';
 </script>
 
 <template>
-  <div class="place-content-center">
+  <div class="">
   <StaffCard/>
   </div>
 </template>
