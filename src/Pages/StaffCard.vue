@@ -10,7 +10,7 @@ import ProfileImage from '@/components/ProfileImage.vue';
 
         <div class="text-center justify-center mb-4 sm:mb-2">
             <div class="flex flex-col items-center justify-center">
-              <ProfileImage profile="/images/mgms.jpg" />
+              <ProfileImage profile="/images/mpm.jpg" />
             </div>
             <div class="flex flex-col items-center justify-center">
               <p class="text-xs mt-1">Mariel Makinano</p>
