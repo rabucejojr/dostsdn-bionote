@@ -5,7 +5,7 @@
     type: String,
     required: true,
   },
-  title: {
+  designation: {
     type: String,
     required: true,
   },
@@ -31,7 +31,7 @@
 <template>
   <div>
     <h2 class="text-xl md:text-2xl font-semibold text-gray-800">{{ name }}</h2>
-    <p class="text-sm md:text-base text-gray-600 mt-1">{{ title }}</p>
+    <p class="text-sm md:text-base text-gray-600 mt-1">{{ designation }}</p>
     <p class="text-sm md:text-base text-gray-600"></p>
     <!-- Clickable Email -->
     <p class="text-sm md:text-base mt-1">
