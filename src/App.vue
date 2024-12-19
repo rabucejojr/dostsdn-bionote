@@ -1,12 +1,10 @@
 <script setup>
-// import OrgChart from './Pages/OrgChart.vue';
-import ViewCard from './components/ViewCard.vue';
+import MainDashboard from './Pages/MainDashboard.vue';
+
 </script>
 
 <template>
-  <OrgChart/>
-
-  <ViewCard/>
+  <MainDashboard/>
 </template>
 
 
@@ -17,6 +15,6 @@ import ViewCard from './components/ViewCard.vue';
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background-color:beige;
+  /* background-color:beige; */
 }
 </style>

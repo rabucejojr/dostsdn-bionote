@@ -1,11 +1,9 @@
 <script setup>
-// import BackgroundHeader from "@/components/BackgroundHeader.vue";
+import StaffCard from './StaffCard.vue';
 </script>
 
 <template>
-  <div class="main-dashboard">
-    <div class="main-dashboard-header border">
-      <img src="/src/assets/bg.png" alt="Background Header" />
-    </div>
+  <div class="place-content-center">
+  <StaffCard/>
   </div>
 </template>
