@@ -1,22 +1,18 @@
 <script setup>
-// import ShowStaff from './components/ShowStaff.vue';
-import MainDashboard from './Pages/MainDashboard.vue';
-
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <MainDashboard/>
-  <!-- <ShowStaff/> -->
+  <RouterView/>
 </template>
 
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Lato&family=Parkinsans&display=swap');
 *{
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
+  font-family: "Lato", serif;
   font-weight: 400;
   font-style: normal;
-  background-color:beige;
+  /* background-color; */
 }
 </style>
