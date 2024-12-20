@@ -19,7 +19,7 @@ const personnelId = parseInt(route.params.id, 10);
     </div>
 
     <div class="w-full max-w-4xl px-4">
-      <!-- <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div class="text-center flex flex-col items-center">
         <router-link to="/" class="flex flex-col items-center group">
           <StaffCard :personnel-id="personnelId"/>
@@ -46,7 +46,7 @@ const personnelId = parseInt(route.params.id, 10);
           <p class="text-xs">PTA I</p>
           </router-link>
         </div>
-      </div> -->
+      </div>
 
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-4">
         <div class="text-center flex flex-col items-center">
