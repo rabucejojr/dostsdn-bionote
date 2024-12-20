@@ -1,10 +1,8 @@
 <script setup>
 import ProfilePicture from '@/components/ProfilePicture.vue';
-import { useRoute } from 'vue-router';
-import StaffCard from '@/components/StaffCard.vue';
+import { ref } from 'vue';
 
-const route = useRoute();
-const personnelId = parseInt(route.params.id, 10);
+const numbers = ref(Array.from({ length: 10 }, (_, i) => i + 1));
 </script>
 
 <template>
@@ -12,17 +10,22 @@ const personnelId = parseInt(route.params.id, 10);
     <!-- Top Level: Mariel Makinano -->
     <div class="text-center mb-4">
       <div class="flex flex-col items-center">
-        <router-link to="/" class="flex flex-col items-center group">
-          <StaffCard :personnel-id="personnelId"/>
+        <router-link :to="`/${numbers[0]}`" class="flex flex-col items-center group">
+          <ProfilePicture profile="/images/mpm.jpg" />
+          <p class="text-sm font-semibold mt-2">Mariel Makinano</p>
+          <p class="text-xs">Provincial Director</p>
         </router-link>
       </div>
     </div>
 
     <div class="w-full max-w-4xl px-4">
+      <!-- Middle Level: 4 Personnel -->
       <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div class="text-center flex flex-col items-center">
-        <router-link to="/" class="flex flex-col items-center group">
-          <StaffCard :personnel-id="personnelId"/>
+        <router-link :to="`/${numbers[1]}`" class="flex flex-col items-center group">
+            <ProfilePicture profile="/images/mgms.jpg" />
+            <p class="text-sm font-semibold mt-2">Mary Grace Sabuero</p>
+            <p class="text-xs">SRS II</p>
         </router-link>
           </div>
         <div class="text-center flex flex-col items-center">
@@ -47,7 +50,7 @@ const personnelId = parseInt(route.params.id, 10);
           </router-link>
         </div>
       </div>
-
+      <!-- Last Level: 5 Personnel -->
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-4">
         <div class="text-center flex flex-col items-center">
           <router-link :to="`/${numbers[5]}`" class="flex flex-col items-center group">
