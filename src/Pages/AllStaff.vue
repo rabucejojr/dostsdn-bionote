@@ -1,6 +1,8 @@
 <script setup>
 import ProfilePicture from '@/components/ProfilePicture.vue';
+import { ref } from 'vue';
 
+const numbers = ref(Array.from({ length: 10 }, (_, i) => i + 1));
 </script>
 
 <template>
@@ -8,7 +10,7 @@ import ProfilePicture from '@/components/ProfilePicture.vue';
     <!-- Top Level: Mariel Makinano -->
     <div class="text-center mb-4">
       <div class="flex flex-col items-center">
-        <router-link to="/1" class="flex flex-col items-center group">
+        <router-link :to="`/${numbers[0]}`" class="flex flex-col items-center group">
           <ProfilePicture profile="/images/mpm.jpg" />
           <p class="text-sm font-semibold mt-2">Mariel Makinano</p>
           <p class="text-xs">Provincial Director</p>
