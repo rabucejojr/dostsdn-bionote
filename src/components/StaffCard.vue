@@ -52,9 +52,6 @@ onMounted(async () => {
             <p class="text-center text-gray-600">{{ personnel.description }}</p>
       </div>
 
-      <p v-else class="text-red-500 text-center text-lg font-semibold">
-        Personnel not found!
-      </p>
     </div>
   </div>
   </div>
