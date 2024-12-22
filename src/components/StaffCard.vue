@@ -3,6 +3,8 @@ import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import axios from 'axios';
 import ProfilePicture from '@/components/ProfilePicture.vue';
+import { RiArrowLeftLine } from '@remixicon/vue';
+
 
 const route = useRoute();
 const personnel = ref(null);
@@ -23,8 +25,8 @@ onMounted(async () => {
 
 <template>
   <div class="p-6">
-    <router-link to="/" class="text-blue-500 underline inline-block">
-      <button>Back</button>
+    <router-link to="/" class=" underline inline-block">
+      <button><RiArrowLeftLine/></button>
     </router-link>
     <div class="min-h-screen flex items-center justify-center">
     <div class="w-full max-w-md md:max-w-lg bg-gray-200 rounded-2xl shadow-2xl p-8 relative">
