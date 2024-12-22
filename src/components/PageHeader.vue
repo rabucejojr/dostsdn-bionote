@@ -30,7 +30,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 w-full bg-blue-500 text-black shadow-lg z-50">
+  <header class="fixed top-0 left-0 w-full bg-blue-500 text-black shadow-lg z-50 p-3">
     <div>
       <div class="px-4 mx-auto flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-2">
         <!-- Logo and Text -->
@@ -38,7 +38,7 @@ onMounted(() => {
           <img
             src="@/assets/dostlogo.png"
             alt="DOST Logo"
-            class="rounded w-24 h-24 lg:w-32 lg:h-32"
+            class="rounded w-20 h-20 lg:w-20 lg:h-20"
           />
           <div class="text-center lg:text-left">
             <h1 class="font-bold uppercase text-xs lg:text-sm">Republic of the Philippines</h1>
