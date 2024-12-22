@@ -8,12 +8,12 @@ import PageFooter from '@/components/PageFooter.vue';
 <template>
   <div class="flex flex-col min-h-screen">
     <!-- Header -->
-    <div class="fixed top-0 left-0 w-full z-50">
+    <div class="fixed top-0 left-0 w-full z-50 shadow-sm sm:px-4 sm:py-2 md:px-6 md:py-3">
       <PageHeader />
     </div>
 
     <!-- Main Content -->
-    <div class="flex-grow pt-20">
+    <div class="flex-grow">
       <AllStaff />
     </div>
 

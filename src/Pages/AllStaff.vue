@@ -7,7 +7,7 @@ const numbers = ref(Array.from({ length: 10 }, (_, i) => i + 1));
 </script>
 
 <template>
-    <div class="pt-40 sm:pt-32 md:pt-40 flex flex-col items-center justify-center min-h-screen">
+    <div class="pt-32 sm:pt-50 md:pt-32 flex flex-col items-center justify-center min-h-screen">
       <!-- Top Level: Mariel Makinano -->
       <div class="text-center mb-4">
         <div class="flex flex-col items-center">
