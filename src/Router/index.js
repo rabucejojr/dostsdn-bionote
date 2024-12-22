@@ -1,12 +1,12 @@
 import StaffModal from '@/components/StaffCard.vue';
-import AllStaff from '@/Pages/AllStaff.vue';
+import MainDashboard from '@/Pages/MainDashboard.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
   {
     path: '/',
-    name: 'AlLStaff',
-    component: AllStaff,
+    name: 'MainDashboard',
+    component: MainDashboard,
   },
   {
     path: '/:id',
