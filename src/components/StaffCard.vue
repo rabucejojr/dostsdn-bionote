@@ -22,11 +22,11 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="p-6 bg-gray-200">
+  <div class="p-6">
     <router-link to="/" class="text-blue-500 underline inline-block">
       <button>Back</button>
     </router-link>
-    <div class="min-h-screen flex items-center justify-center bg-gray-200">
+    <div class="min-h-screen flex items-center justify-center">
     <div class="w-full max-w-md md:max-w-lg bg-gray-200 rounded-2xl shadow-2xl p-8 relative">
       <!-- Background Shapes -->
 
