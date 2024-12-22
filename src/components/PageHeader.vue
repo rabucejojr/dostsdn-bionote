@@ -30,7 +30,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 w-full bg-blue-500 text-black shadow-lg z-50 p-3">
+  <header class="fixed top-0 left-0 w-full bg-blue-500 text-black shadow-lg z-50 p-3 max-md:pb-3">
     <div>
       <div class="px-4 mx-auto flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-2">
         <!-- Logo and Text -->
@@ -40,7 +40,7 @@ onMounted(() => {
             alt="DOST Logo"
             class="rounded w-20 h-20 lg:w-20 lg:h-20"
           />
-          <div class="text-center lg:text-left">
+          <div class="text-center sm:text-left lg:text-left">
             <h1 class="font-bold uppercase text-xs lg:text-sm">Republic of the Philippines</h1>
             <h2 class="text-base lg:text-lg font-bold">Department of Science and Technology</h2>
             <h3 class="text-yellow-300 text-lg lg:text-xl font-semibold">PSTO - Surigao del Norte</h3>
@@ -48,7 +48,7 @@ onMounted(() => {
         </div>
         <!-- Date and Time -->
         <div class="flex flex-col">
-          <div class="text-center lg:text-right text-sm">
+          <div class="text-center lg:text-right md:text-left">
             <p class="text-left">Philippine Standard Time:</p>
             <p>{{ currentDateTime }}</p>
           </div>

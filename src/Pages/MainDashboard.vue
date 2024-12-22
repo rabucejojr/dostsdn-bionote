@@ -13,7 +13,7 @@ import PageFooter from '@/components/PageFooter.vue';
     </div>
 
     <!-- Main Content -->
-    <div class="flex-grow">
+    <div class="">
       <AllStaff />
     </div>
 
