@@ -1,5 +1,5 @@
 <script setup>
-import ProfilePicture from '@/components/ProfilePicture.vue';
+import ProfileCard from '@/components/ProfileCard.vue';
 import { ref } from 'vue';
 
 const numbers = ref(Array.from({ length: 10 }, (_, i) => i + 1));
@@ -10,11 +10,12 @@ const numbers = ref(Array.from({ length: 10 }, (_, i) => i + 1));
     <!-- Top Level: Mariel Makinano -->
     <div class="text-center mb-4">
       <div class="flex flex-col items-center">
-        <router-link :to="`/${numbers[0]}`" class="flex flex-col items-center group">
-          <ProfilePicture profile="/images/mpm.jpg" />
-          <p class="text-sm font-semibold mt-2">Mariel Makinano</p>
-          <p class="text-xs">Provincial Director</p>
-        </router-link>
+        <ProfileCard
+          :to="`/${numbers[0]}`"
+          profile="/images/mpm.jpg"
+          name="Mariel Makinano"
+          position="Provincial Director"
+        />
       </div>
     </div>
 
@@ -22,70 +23,79 @@ const numbers = ref(Array.from({ length: 10 }, (_, i) => i + 1));
       <!-- Middle Level: 4 Personnel -->
       <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div class="text-center flex flex-col items-center">
-        <router-link :to="`/${numbers[1]}`" class="flex flex-col items-center group">
-            <ProfilePicture profile="/images/mgms.jpg" />
-            <p class="text-sm font-semibold mt-2">Mary Grace Sabuero</p>
-            <p class="text-xs">SRS II</p>
-        </router-link>
+            <ProfileCard
+              :to="`/${numbers[1]}`"
+              profile="/images/mgms.jpg"
+              name="Mary Grace Sabuero"
+              position="SRS II"
+            />
           </div>
         <div class="text-center flex flex-col items-center">
-          <router-link :to="`/${numbers[2]}`" class="flex flex-col items-center group">
-          <ProfilePicture profile="/images/melr.jpg" />
-          <p class="text-sm font-semibold mt-2">Mildred Eileen Ronsable</p>
-          <p class="text-xs">SRS II</p>
-          </router-link>
+          <ProfileCard
+              :to="`/${numbers[2]}`"
+              profile="/images/melr.jpg"
+              name="Mildred Eileen Ronsable"
+              position="SRS II"
+            />
         </div>
         <div class="text-center flex flex-col items-center">
-          <router-link :to="`/${numbers[3]}`" class="flex flex-col items-center group">
-          <ProfilePicture profile="/images/rjit.jpg" />
-          <p class="text-sm font-semibold mt-2">Rey Jeeve Tambole</p>
-          <p class="text-xs">SRS I</p>
-          </router-link>
+          <ProfileCard
+              :to="`/${numbers[3]}`"
+              profile="/images/rjit.jpg"
+              name="Rey Jeeve Tambole"
+              position="SRS I"
+            />
         </div>
         <div class="text-center flex flex-col items-center">
-          <router-link :to="`/${numbers[4]}`" class="flex flex-col items-center group">
-          <ProfilePicture profile="/images/faf.jpg" />
-          <p class="text-sm font-semibold mt-2">Farouk Faisal</p>
-          <p class="text-xs">PTA I</p>
-          </router-link>
+          <ProfileCard
+              :to="`/${numbers[4]}`"
+              profile="/images/faf.jpg"
+              name="Farouk Faisal"
+              position="PTA I"
+            />
         </div>
       </div>
       <!-- Last Level: 5 Personnel -->
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-4">
         <div class="text-center flex flex-col items-center">
-          <router-link :to="`/${numbers[5]}`" class="flex flex-col items-center group">
-          <ProfilePicture profile="/images/sqy.jpg" />
-          <p class="text-sm font-semibold mt-2">Stephen Yecyec</p>
-          <p class="text-xs">PTA I</p>
-          </router-link>
+          <ProfileCard
+              :to="`/${numbers[5]}`"
+              profile="/images/sqy.jpg"
+              name="Stephen Yecyec"
+              position="PTA I"
+            />
         </div>
         <div class="text-center flex flex-col items-center">
-          <router-link :to="`/${numbers[6]}`" class="flex flex-col items-center group">
-          <ProfilePicture profile="/images/jab.jpg" />
-          <p class="text-sm font-semibold mt-2">Joverth Butcon, Jr.</p>
-          <p class="text-xs">PTA II</p>
-          </router-link>
+          <ProfileCard
+              :to="`/${numbers[6]}`"
+              profile="/images/jab.jpg"
+              name="Joverth Butcon, Jr."
+              position="PTA II"
+            />
         </div>
         <div class="text-center flex flex-col items-center">
-          <router-link :to="`/${numbers[7]}`" class="flex flex-col items-center group">
-          <ProfilePicture profile="/images/vtd.jpg" />
-          <p class="text-sm font-semibold mt-2">Vaneza dela Torre</p>
-          <p class="text-xs">PTA I</p>
-          </router-link>
+          <ProfileCard
+              :to="`/${numbers[7]}`"
+              profile="/images/vtd.jpg"
+              name="Vaneza dela Torre"
+              position="PTA I"
+            />
         </div>
         <div class="text-center flex flex-col items-center">
-          <router-link :to="`/${numbers[8]}`" class="flex flex-col items-center group">
-          <ProfilePicture profile="/images/joa.jpg" />
-          <p class="text-sm font-semibold mt-2">Jovan Agbu</p>
-          <p class="text-xs">PTA II, B2MEIC</p>
-          </router-link>
+          <ProfileCard
+              :to="`/${numbers[8]}`"
+              profile="/images/joa.jpg"
+              name="Jovan Agbu"
+              position="PTA II"
+            />
         </div>
         <div class="text-center flex flex-col items-center">
-          <router-link :to="`/${numbers[9]}`" class="flex flex-col items-center group">
-          <ProfilePicture profile="/images/rha.jpg" />
-          <p class="text-sm font-semibold mt-2">Roger Abucejo, Jr.</p>
-          <p class="text-xs">Support Staff</p>
-          </router-link>
+          <ProfileCard
+              :to="`/${numbers[9]}`"
+              profile="/images/rha.jpg"
+              name="Roger Abucejo, Jr."
+              position="Support Staff"
+            />
         </div>
       </div>
     </div>
