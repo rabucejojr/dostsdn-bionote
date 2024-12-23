@@ -1,17 +1,17 @@
 <script setup>
-import PageHeader from "@/components/PageHeader.vue";
-import AllStaff from "./AllStaff.vue";
-import PageFooter from "@/components/PageFooter.vue";
+import PageHeader from '@/components/PageHeader.vue'
+import AllStaff from './AllStaff.vue'
+import PageFooter from '@/components/PageFooter.vue'
 </script>
 
 <template>
   <div class="flex flex-col min-h-screen h-screen">
     <!-- Header -->
-    <PageHeader class="flex-[2]"/>
+    <PageHeader class="flex-[2]" />
     <!-- Main Content -->
-    <AllStaff class="flex-[8]"/>
+    <AllStaff class="flex-[8]" />
     <!-- Footer -->
-    <PageFooter class="flex-[2]"/>
+    <PageFooter class="flex-[2]" />
   </div>
 </template>
 <style scoped>
