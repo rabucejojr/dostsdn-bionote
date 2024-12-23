@@ -1,87 +1,89 @@
 <script setup>
-import ProfileCard from "@/components/ProfileCard.vue";
-import { ref, computed } from "vue";
+import ProfileCard from '@/components/ProfileCard.vue'
+import { ref, computed } from 'vue'
 
 const staffData = ref([
   {
     id: 1,
-    profile: "/images/mpm.jpg",
-    name: "Mariel Makinano",
-    position: "Provincial Director",
-    level: "top"
+    profile: '/images/mpm.jpg',
+    name: 'Mariel Makinano',
+    position: 'Provincial Director',
+    level: 'top',
   },
   {
     id: 2,
-    profile: "/images/mgms.jpg",
-    name: "Mary Grace Sabuero",
-    position: "SRS II",
-    level: "middle"
+    profile: '/images/mgms.jpg',
+    name: 'Mary Grace Sabuero',
+    position: 'SRS II',
+    level: 'middle',
   },
   {
     id: 3,
-    profile: "/images/melr.jpg",
-    name: "Mildred Eileen Ronsable",
-    position: "SRS II",
-    level: "middle"
+    profile: '/images/melr.jpg',
+    name: 'Mildred Eileen Ronsable',
+    position: 'SRS II',
+    level: 'middle',
   },
   {
     id: 4,
-    profile: "/images/rjit.jpg",
-    name: "Rey Jeeve Tambole",
-    position: "SRS I",
-    level: "middle"
+    profile: '/images/rjit.jpg',
+    name: 'Rey Jeeve Tambole',
+    position: 'SRS I',
+    level: 'middle',
   },
   {
     id: 5,
-    profile: "/images/faf.jpg",
-    name: "Farouk Faisal",
-    position: "PTA I",
-    level: "middle"
+    profile: '/images/faf.jpg',
+    name: 'Farouk Faisal',
+    position: 'PTA I',
+    level: 'middle',
   },
   {
     id: 6,
-    profile: "/images/sqy.jpg",
-    name: "Stephen Yecyec",
-    position: "PTA I",
-    level: "bottom"
+    profile: '/images/sqy.jpg',
+    name: 'Stephen Yecyec',
+    position: 'PTA I',
+    level: 'bottom',
   },
   {
     id: 7,
-    profile: "/images/jab.jpg",
-    name: "Joverth Butcon, Jr.",
-    position: "PTA II",
-    level: "bottom"
+    profile: '/images/jab.jpg',
+    name: 'Joverth Butcon, Jr.',
+    position: 'PTA II',
+    level: 'bottom',
   },
   {
     id: 8,
-    profile: "/images/vtd.jpg",
-    name: "Vaneza dela Torre",
-    position: "PTA I",
-    level: "bottom"
+    profile: '/images/vtd.jpg',
+    name: 'Vaneza dela Torre',
+    position: 'PTA I',
+    level: 'bottom',
   },
   {
     id: 9,
-    profile: "/images/joa.jpg",
-    name: "Jovan Agbu",
-    position: "PTA II",
-    level: "bottom"
+    profile: '/images/joa.jpg',
+    name: 'Jovan Agbu',
+    position: 'PTA II',
+    level: 'bottom',
   },
   {
     id: 10,
-    profile: "/images/rha.jpg",
-    name: "Roger Abucejo, Jr.",
-    position: "Support Staff",
-    level: "bottom"
-  }
-]);
+    profile: '/images/rha.jpg',
+    name: 'Roger Abucejo, Jr.',
+    position: 'Support Staff',
+    level: 'bottom',
+  },
+])
 
-const topStaff = computed(() => staffData.value.filter(staff => staff.level === "top"));
-const middleStaff = computed(() => staffData.value.filter(staff => staff.level === "middle"));
-const bottomStaff = computed(() => staffData.value.filter(staff => staff.level === "bottom"));
+const topStaff = computed(() => staffData.value.filter((staff) => staff.level === 'top'))
+const middleStaff = computed(() => staffData.value.filter((staff) => staff.level === 'middle'))
+const bottomStaff = computed(() => staffData.value.filter((staff) => staff.level === 'bottom'))
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center py-4 lg:py-0 h-fit lg:h-[calc(100vh-105px-100px)]">
+  <div
+    class="flex flex-col items-center justify-center py-4 lg:py-0 h-fit lg:h-[calc(100vh-105px-100px)]"
+  >
     <!-- Top Level -->
     <div v-for="staff in topStaff" :key="staff.id" class="text-center flex flex-col items-center">
       <ProfileCard
