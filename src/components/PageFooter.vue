@@ -13,7 +13,7 @@ const socialLinks = [
     label: "Instagram",
   },
   {
-    href: "dost.sdn@caraga.dost.gov.ph",
+    href: "mailto:dost.sdn@caraga.dost.gov.ph",
     icon: RiMailLine,
     label: "Email",
   },
@@ -26,7 +26,7 @@ const socialLinks = [
 </script>
 
 <template>
-  <footer class="bg-gray-800 text-white py-3">
+  <footer class="bg-gray-800 text-white py-3 max-h-[100px] min-h-[100px]">
     <div class="container mx-auto text-center">
       <p class="text-sm mb-2">Connect with us</p>
       <div class="flex justify-center gap-6">
