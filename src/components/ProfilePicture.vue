@@ -27,12 +27,12 @@ const handleError = () => {
 <template>
   <div>
     <div class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full bg-gray-200 overflow-hidden flex items-center justify-center shadow-lg relative">
-      <img 
-        v-show="!isLoading" 
-        :src="profile" 
-        alt="Profile Image" 
-        class="object-cover" 
-        @load="handleLoad" 
+      <img
+        v-show="!isLoading"
+        :src="profile"
+        alt="Profile Image"
+        class="object-cover"
+        @load="handleLoad"
         @error="handleError"
       />
       <div v-show="isLoading">
