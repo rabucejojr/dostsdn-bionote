@@ -7,21 +7,19 @@ const numbers = ref(Array.from({ length: 10 }, (_, i) => i + 1));
 </script>
 
 <template>
-  <div class="pt-24 sm:pt-40 flex flex-col items-center justify-center min-h-screen">
+  <div class="pt-12 sm:pt-20 flex flex-col items-center justify-center min-h-min">
     <!-- Top Level: Mariel Makinano -->
-    <div class="text-center mb-4">
-      <div class="flex flex-col items-center">
-        <ProfileCard
-          :to="`/${numbers[0]}`"
-          profile="/images/mpm.jpg"
-          name="Mariel Makinano"
-          position="Provincial Director"
-        />
-      </div>
+    <div class="text-center flex flex-col items-center">
+      <ProfileCard
+        :to="`/${numbers[0]}`"
+        profile="/images/mpm.jpg"
+        name="Mariel Makinano"
+        position="Provincial Director"
+      />
     </div>
-    <div class="w-full max-w-4xl px-4">
+    <div class="w-full max-w-4xl px-2">
       <!-- Middle Level: 4 Personnel -->
-      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2">
         <div class="text-center flex flex-col items-center">
           <ProfileCard
             :to="`/${numbers[1]}`"
@@ -57,7 +55,7 @@ const numbers = ref(Array.from({ length: 10 }, (_, i) => i + 1));
       </div>
       <!-- Last Level: 5 Personnel -->
       <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-4"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-2"
       >
         <div class="text-center flex flex-col items-center">
           <ProfileCard
