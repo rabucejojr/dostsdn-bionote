@@ -46,8 +46,6 @@ onMounted(() => {
           class="absolute top-8 right-8 w-20 h-20 bg-yellow-500 opacity-20 rounded-full md:w-28 md:h-28 lg:w-32 lg:h-32" />
         <!-- Content -->
         <div v-if="isLoading" class="flex justify-center items-center min-h-[300px]">
-          <LoadingIndicator/>
-          <LoadingIndicator size="md"/>
           <LoadingIndicator size="lg"/>
         </div>
         <div v-else class="relative z-10">
