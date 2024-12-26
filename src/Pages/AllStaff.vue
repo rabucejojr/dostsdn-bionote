@@ -1,100 +1,128 @@
 <script setup>
-import ProfileCard from "@/components/ProfileCard.vue";
+import ProfileCard from '@/components/ProfileCard.vue'
+import { ref, computed } from 'vue'
 
-import { ref } from "vue";
+const staffData = ref([
+  {
+    id: 1,
+    profile: '/images/mpm.jpg',
+    name: 'Mariel Makinano',
+    position: 'Provincial Director',
+    level: 'top',
+  },
+  {
+    id: 2,
+    profile: '/images/mgms.jpg',
+    name: 'Mary Grace Sabuero',
+    position: 'SRS II',
+    level: 'middle',
+  },
+  {
+    id: 3,
+    profile: '/images/melr.jpg',
+    name: 'Mildred Eileen Ronsable',
+    position: 'SRS II',
+    level: 'middle',
+  },
+  {
+    id: 4,
+    profile: '/images/rjit.jpg',
+    name: 'Rey Jeeve Tambole',
+    position: 'SRS I',
+    level: 'middle',
+  },
+  {
+    id: 5,
+    profile: '/images/faf.jpg',
+    name: 'Farouk Faisal',
+    position: 'PTA I',
+    level: 'middle',
+  },
+  {
+    id: 6,
+    profile: '/images/sqy.jpg',
+    name: 'Stephen Yecyec',
+    position: 'PTA I',
+    level: 'bottom',
+  },
+  {
+    id: 7,
+    profile: '/images/jab.jpg',
+    name: 'Joverth Butcon, Jr.',
+    position: 'PTA II',
+    level: 'bottom',
+  },
+  {
+    id: 8,
+    profile: '/images/vtd.jpg',
+    name: 'Vaneza dela Torre',
+    position: 'PTA I',
+    level: 'bottom',
+  },
+  {
+    id: 9,
+    profile: '/images/joa.jpg',
+    name: 'Jovan Agbu',
+    position: 'PTA II',
+    level: 'bottom',
+  },
+  {
+    id: 10,
+    profile: '/images/rha.jpg',
+    name: 'Roger Abucejo, Jr.',
+    position: 'Support Staff',
+    level: 'bottom',
+  },
+])
 
-const numbers = ref(Array.from({ length: 10 }, (_, i) => i + 1));
+const topStaff = computed(() => staffData.value.filter((staff) => staff.level === 'top'))
+const middleStaff = computed(() => staffData.value.filter((staff) => staff.level === 'middle'))
+const bottomStaff = computed(() => staffData.value.filter((staff) => staff.level === 'bottom'))
 </script>
 
 <template>
-  <div class="pt-12 sm:pt-20 flex flex-col items-center justify-center min-h-screen">
-    <!-- Top Level: Mariel Makinano -->
-    <div class="text-center flex flex-col items-center">
+  <div
+    class="flex flex-col items-center justify-center py-4 lg:py-0 h-fit lg:h-[calc(100vh-105px-100px)]"
+  >
+    <!-- Top Level -->
+    <div v-for="staff in topStaff" :key="staff.id" class="text-center flex flex-col items-center">
       <ProfileCard
-        :to="`/${numbers[0]}`"
-        profile="/images/mpm.jpg"
-        name="Mariel Makinano"
-        position="Provincial Director"
+        :to="`/${staff.id}`"
+        :profile="staff.profile"
+        :name="staff.name"
+        :position="staff.position"
       />
     </div>
+
     <div class="w-full max-w-4xl px-2">
-      <!-- Middle Level: 4 Personnel -->
+      <!-- Middle Level -->
       <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2">
-        <div class="text-center flex flex-col items-center">
+        <div
+          v-for="staff in middleStaff"
+          :key="staff.id"
+          class="text-center flex flex-col items-center"
+        >
           <ProfileCard
-            :to="`/${numbers[1]}`"
-            profile="/images/mgms.jpg"
-            name="Mary Grace Sabuero"
-            position="SRS II"
-          />
-        </div>
-        <div class="text-center flex flex-col items-center">
-          <ProfileCard
-            :to="`/${numbers[2]}`"
-            profile="/images/melr.jpg"
-            name="Mildred Eileen Ronsable"
-            position="SRS II"
-          />
-        </div>
-        <div class="text-center flex flex-col items-center">
-          <ProfileCard
-            :to="`/${numbers[3]}`"
-            profile="/images/rjit.jpg"
-            name="Rey Jeeve Tambole"
-            position="SRS I"
-          />
-        </div>
-        <div class="text-center flex flex-col items-center">
-          <ProfileCard
-            :to="`/${numbers[4]}`"
-            profile="/images/faf.jpg"
-            name="Farouk Faisal"
-            position="PTA I"
+            :to="`/${staff.id}`"
+            :profile="staff.profile"
+            :name="staff.name"
+            :position="staff.position"
           />
         </div>
       </div>
-      <!-- Last Level: 5 Personnel -->
-      <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-2"
-      >
-        <div class="text-center flex flex-col items-center">
+
+      <!-- Bottom Level -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-2">
+        <div
+          v-for="staff in bottomStaff"
+          :key="staff.id"
+          class="text-center flex flex-col items-center"
+        >
           <ProfileCard
-            :to="`/${numbers[5]}`"
-            profile="/images/sqy.jpg"
-            name="Stephen Yecyec"
-            position="PTA I"
-          />
-        </div>
-        <div class="text-center flex flex-col items-center">
-          <ProfileCard
-            :to="`/${numbers[6]}`"
-            profile="/images/jab.jpg"
-            name="Joverth Butcon, Jr."
-            position="PTA II"
-          />
-        </div>
-        <div class="text-center flex flex-col items-center">
-          <ProfileCard
-            :to="`/${numbers[7]}`"
-            profile="/images/vtd.jpg"
-            name="Vaneza dela Torre"
-            position="PTA I"
-          />
-        </div>
-        <div class="text-center flex flex-col items-center">
-          <ProfileCard
-            :to="`/${numbers[8]}`"
-            profile="/images/joa.jpg"
-            name="Jovan Agbu"
-            position="PTA II"
-          />
-        </div>
-        <div class="text-center flex flex-col items-center">
-          <ProfileCard
-            :to="`/${numbers[9]}`"
-            profile="/images/rha.jpg"
-            name="Roger Abucejo, Jr."
-            position="Support Staff"
+            :to="`/${staff.id}`"
+            :profile="staff.profile"
+            :name="staff.name"
+            :position="staff.position"
           />
         </div>
       </div>

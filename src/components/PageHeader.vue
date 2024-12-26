@@ -1,61 +1,81 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from 'vue'
 
-
-const currentDateTime = ref('');
+const currentTime = ref('')
+const currentDate = ref('')
 
 defineProps({
-    pos:{type:String,default:''},
+  pos: { type: String, default: '' },
 })
 
 const updateDateTime = () => {
-  currentDateTime.value = new Date().toLocaleString('en-US', {
+  const now = new Date()
+  currentTime.value = now.toLocaleTimeString('en-US', {
     timeZone: 'Asia/Manila',
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
-  });
-};
-
+    hour12: true,
+  })
+  currentDate.value = now.toLocaleDateString('en-US', {
+    timeZone: 'Asia/Manila',
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  })
+}
 
 // Initialize and keep updating the time every second
 onMounted(() => {
-  updateDateTime();
-  setInterval(updateDateTime, 1000);
-});
+  updateDateTime()
+  setInterval(updateDateTime, 1000)
+})
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 w-full bg-blue-500 text-black shadow-lg z-50 p-3 max-md:pb-3">
+  <header
+    class="w-full bg-blue-500 text-white shadow-lg z-50 p-3 lg:pt-0 max-md:pb-3 h-fit lg:max-h-[105px] lg:min-h-[105px]"
+  >
     <div>
-      <div class="px-4 mx-auto flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-2">
+      <div
+        class="px-0 mx-auto flex flex-col md:flex-row justify-between items-center lg:space-y-2 lg:px-4"
+      >
         <!-- Logo and Text -->
-        <div class="flex items-center space-x-4">
+        <img
+          src="@/assets/dostlogo.png"
+          alt="DOST Logo"
+          class="rounded block md:hidden 2xs:w-[4rem] 2xs:h-[4rem]"
+        />
+        <div class="flex items-center my-1 md:my-0 space-x-4">
           <img
             src="@/assets/dostlogo.png"
             alt="DOST Logo"
-            class="rounded w-20 h-20 lg:w-20 lg:h-20"
+            class="rounded hidden md:block sm:w-20 sm:h-20"
           />
-          <div class="text-center sm:text-left lg:text-left">
-            <h1 class="font-bold uppercase text-xs lg:text-sm">Republic of the Philippines</h1>
-            <h2 class="text-base lg:text-lg font-bold">Department of Science and Technology</h2>
-            <h3 class="text-yellow-300 text-lg lg:text-xl font-semibold">PSTO - Surigao del Norte</h3>
+          <div class="text-center md:text-left">
+            <h1 class="font-bold uppercase text-[10px] sm:text-xs lg:text-sm">
+              Republic of the Philippines
+            </h1>
+            <h2 class="text-md sm:text-lg font-bold">Department of Science and Technology</h2>
+            <h3 class="text-yellow-300 text-sm sm:text-base lg:text-xl font-semibold">
+              PSTO - Surigao del Norte
+            </h3>
           </div>
         </div>
         <!-- Date and Time -->
-        <div class="flex flex-col">
-          <div class="text-center lg:text-right md:text-left">
-            <p class="text-left">Philippine Standard Time:</p>
-            <p>{{ currentDateTime }}</p>
+        <div class="flex flex-col mt-0">
+          <div class="flex flex-col text-center md:text-right lg:text-left lg:flex-row">
+            <p class="text-md content-center sm:text-2xl font-bold">{{ currentTime }}</p>
+            <div class="lg:ml-4">
+              <p class="text-sm lg:text-base">{{ currentDate }}</p>
+              <p class="text-left uppercase text-[10px] sm:text-xs text-gray-300">
+                Philippine Standard Time
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </header>
 </template>
-
-
