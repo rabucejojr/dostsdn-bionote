@@ -1,28 +1,28 @@
 <script setup>
-import { RiFacebookLine, RiInstagramLine, RiMailLine, RiChat1Line } from '@remixicon/vue'
+import { RiFacebookLine, RiInstagramLine, RiMailLine, RiChat1Line } from "@remixicon/vue";
 
 const socialLinks = [
   {
-    href: 'https://www.facebook.com/dostsdn',
+    href: "https://www.facebook.com/dostsdn",
     icon: RiFacebookLine,
-    label: 'Facebook',
+    label: "Facebook",
   },
   {
-    href: 'https://www.instagram.com/dostsdn',
+    href: "https://www.instagram.com/dost.sdn",
     icon: RiInstagramLine,
-    label: 'Instagram',
+    label: "Instagram",
   },
   {
-    href: 'mailto:dost.sdn@caraga.dost.gov.ph',
+    href: "mailto:dost.sdn@caraga.dost.gov.ph",
     icon: RiMailLine,
-    label: 'Email',
+    label: "Email",
   },
   {
-    href: 'tel:+1234567890',
+    href: "tel:+1234567890",
     icon: RiChat1Line,
-    label: 'Phone',
+    label: "Phone",
   },
-]
+];
 </script>
 
 <template>
