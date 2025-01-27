@@ -18,7 +18,7 @@ const socialLinks = [
     label: "Email",
   },
   {
-    href: "tel:+1234567890",
+    href: "tel:+639123805464",
     icon: RiChat1Line,
     label: "Phone",
   },
