@@ -40,27 +40,34 @@ const staffData = ref([
   },
   {
     id: 6,
+    profile: "",
+    name: "Julius Cagampang",
+    position: "PTA I",
+    level: "bottom",
+  },
+  {
+    id: 7,
     profile: "/images/jab.jpg",
     name: "Joverth Butcon, Jr.",
     position: "PTA II",
     level: "bottom",
   },
   {
-    id: 7,
+    id: 8,
     profile: "/images/vtd.jpg",
     name: "Vaneza dela Torre",
     position: "PTA I",
     level: "bottom",
   },
   {
-    id: 8,
+    id: 9,
     profile: "/images/joa.jpg",
     name: "Jovan Agbu",
     position: "PTA II",
     level: "bottom",
   },
   {
-    id: 9,
+    id: 10,
     profile: "/images/rha.jpg",
     name: "Roger Abucejo, Jr.",
     position: "Support Staff",
@@ -97,7 +104,7 @@ const bottomStaff = computed(() =>
 
     <div class="w-full max-w-4xl px-2">
       <!-- Middle Level -->
-      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
         <div
           v-for="staff in middleStaff"
           :key="staff.id"
@@ -114,7 +121,7 @@ const bottomStaff = computed(() =>
 
       <!-- Bottom Level -->
       <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 mt-2"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-2 mt-2"
       >
         <div
           v-for="staff in bottomStaff"
