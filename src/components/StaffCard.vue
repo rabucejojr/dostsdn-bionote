@@ -67,7 +67,7 @@ onMounted(() => {
         <p class="text-center text-gray-600">
           <a :href="`mailto:${personnel.email}`">{{ personnel.email }}</a>
         </p>
-        <p class="text-center text-gray-600">{{ personnel.location }}</p>
+        <!-- <p class="text-center text-gray-600">{{ personnel.location }}</p> -->
         <p class="text-center text-gray-600">{{ personnel.description }}</p>
       </div>
     </div>
