@@ -48,9 +48,18 @@
     "email": "stephenyecyec.dost@gmail.com",
     "phone": "+63-967-890-1234",
     "description": "Bringing creativity and problem-solving skills to team projects."
+  },  {
+    "id": 6,
+    "profile": "/images/jdc.jpg",
+    "name": "Juliis Cagampang",
+    "designation": "PTA I",
+    "location": "Surigao del Norte, Philippines",
+    "email": "jdcagampang@gmail.com",
+    "phone": "+63-978-901-2345",
+    "description": "Providing efficient technical and operational support for project success."
   },
   {
-    "id": 6,
+    "id": 7,
     "profile": "/images/jab.jpg",
     "name": "Joverth Butcon, Jr.",
     "designation": "PTA II",
@@ -60,7 +69,7 @@
     "description": "Committed to delivering quality technical and operational support."
   },
   {
-    "id": 7,
+    "id": 8,
     "profile": "/images/vtd.jpg",
     "name": "Vaneza dela Torre",
     "designation": "PTA I",
@@ -70,7 +79,7 @@
     "description": "Ensures project milestones are met with efficiency and dedication."
   },
   {
-    "id": 8,
+    "id": 9,
     "profile": "/images/joa.jpg",
     "name": "Jovan Agbu",
     "designation": "PTA II, B2MEIC",
@@ -80,7 +89,7 @@
     "description": "Skilled in business incubation and entrepreneurial support."
   },
   {
-    "id": 9,
+    "id": 10,
     "profile": "/images/rha.jpg",
     "name": "Roger Abucejo, Jr.",
     "designation": "Support Staff",

@@ -40,7 +40,7 @@ const staffData = ref([
   },
   {
     id: 6,
-    profile: "",
+    profile: "/images/jdc.jpg",
     name: "Julius Cagampang",
     position: "PTA I",
     level: "bottom",
