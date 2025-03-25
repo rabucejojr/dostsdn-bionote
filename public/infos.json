@@ -41,25 +41,6 @@
   },
   {
     "id": 5,
-    "profile": "/images/sqy.jpg",
-    "name": "Stephen Yecyec",
-    "designation": "PTA I",
-    "location": "Surigao del Norte, Philippines",
-    "email": "stephenyecyec.dost@gmail.com",
-    "phone": "+63-967-890-1234",
-    "description": "Bringing creativity and problem-solving skills to team projects."
-  },  {
-    "id": 6,
-    "profile": "/images/jdc.jpg",
-    "name": "Juliis Cagampang",
-    "designation": "PTA I",
-    "location": "Surigao del Norte, Philippines",
-    "email": "juliuscagampang.dost@gmail.com",
-    "phone": "+63-967-430-1961",
-    "description": "Providing efficient technical and operational support for project success."
-  },
-  {
-    "id": 7,
     "profile": "/images/jab.jpg",
     "name": "Joverth Butcon, Jr.",
     "designation": "PTA II",
@@ -69,17 +50,7 @@
     "description": "Committed to delivering quality technical and operational support."
   },
   {
-    "id": 8,
-    "profile": "/images/vtd.jpg",
-    "name": "Vaneza dela Torre",
-    "designation": "PTA I",
-    "location": "Surigao del Norte, Philippines",
-    "email": "delatorrevaneza@gmail.com",
-    "phone": "+63-989-012-3456",
-    "description": "Ensures project milestones are met with efficiency and dedication."
-  },
-  {
-    "id": 9,
+    "id": 6,
     "profile": "/images/joa.jpg",
     "name": "Jovan Agbu",
     "designation": "PTA II, B2MEIC",
@@ -87,6 +58,35 @@
     "email": "agbujovan@gmail.com",
     "phone": "+63-901-234-5678",
     "description": "Skilled in business incubation and entrepreneurial support."
+  },
+  {
+    "id": 7,
+    "profile": "/images/sqy.jpg",
+    "name": "Stephen Yecyec",
+    "designation": "PTA I",
+    "location": "Surigao del Norte, Philippines",
+    "email": "stephenyecyec.dost@gmail.com",
+    "phone": "+63-967-890-1234",
+    "description": "Bringing creativity and problem-solving skills to team projects."
+  },  {
+    "id": 8,
+    "profile": "/images/jdc.jpg",
+    "name": "Juliis Cagampang",
+    "designation": "PTA I",
+    "location": "Surigao del Norte, Philippines",
+    "email": "juliuscagampang.dost@gmail.com",
+    "phone": "+63-967-430-1961",
+    "description": "Providing efficient technical and operational support for project success."
+  },
+  {
+    "id": 9,
+    "profile": "/images/vtd.jpg",
+    "name": "Vaneza dela Torre",
+    "designation": "PTA I",
+    "location": "Surigao del Norte, Philippines",
+    "email": "delatorrevaneza@gmail.com",
+    "phone": "+63-989-012-3456",
+    "description": "Ensures project milestones are met with efficiency and dedication."
   },
   {
     "id": 10,
