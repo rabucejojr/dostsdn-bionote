@@ -36,7 +36,7 @@ const staffData = ref([
     profile: "/images/jab.jpg",
     name: "Joverth Butcon, Jr.",
     position: "PTA II",
-    level: "bottom",
+    level: "middle",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const staffData = ref([
     profile: "/images/sqy.jpg",
     name: "Stephen Yecyec",
     position: "PTA I",
-    level: "middle",
+    level: "bottom",
   },
   {
     id: 8,
