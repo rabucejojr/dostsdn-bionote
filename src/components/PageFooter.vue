@@ -36,10 +36,11 @@ const socialLinks = [
           :href="link.href"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-white text-2xl hover:text-blue-500 transition-colors"
+          class="text-white text-2xl hover:text-blue-500 transition-colors flex items-center gap-2"
           :aria-label="link.label"
         >
           <component :is="link.icon" />
+          <span class="text-xs">{{ link.label }}</span>
         </a>
       </div>
       <p class="text-xs mt-2">
