@@ -34,7 +34,7 @@ const socialLinks = [
         :href="link.href"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-gray-800 text-2xl md:text-3xl hover:text-blue-500 transition-colors flex items-center gap-2"
+        class="text-gray-800 text-2xl md:text-3xl hover:text-blue-500 transition-colors flex items-center gap-2 p-2 rounded-lg hover:bg-gray-200"
         :aria-label="link.label"
       >
         <component :is="link.icon" />

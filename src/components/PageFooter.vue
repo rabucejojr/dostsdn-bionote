@@ -40,7 +40,6 @@ const socialLinks = [
           :aria-label="link.label"
         >
           <component :is="link.icon" />
-          <span class="text-xs">{{ link.label }}</span>
         </a>
       </div>
       <p class="text-xs mt-2">
