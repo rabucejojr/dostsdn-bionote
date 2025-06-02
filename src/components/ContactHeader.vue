@@ -27,7 +27,7 @@ const socialLinks = [
 
 <template>
   <div class="p-1 border-gray-300">
-    <div class="flex flex-wrap justify-center gap-4 md:gap-6 m-4 md:m-6">
+    <div class="flex flex-wrap justify-center gap-2 md:gap-4 m-2 md:m-4">
       <a
         v-for="link in socialLinks"
         :key="link.label"

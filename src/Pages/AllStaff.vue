@@ -86,7 +86,7 @@ const bottomStaff = computed(() =>
 
 <template>
   <div
-    class="flex flex-col items-center justify-center py-4 lg:py-0 h-fit lg:h-[calc(100vh-105px-100px)]"
+    class="flex flex-col items-center justify-center py-2 lg:py-0 h-fit lg:h-[calc(100vh-105px-100px)]"
   >
     <!-- Top Level -->
     <div
@@ -102,9 +102,9 @@ const bottomStaff = computed(() =>
       />
     </div>
 
-    <div class="w-full max-w-4xl px-2">
+    <div class="w-full max-w-4xl px-1">
       <!-- Middle Level -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1">
         <div
           v-for="staff in middleStaff"
           :key="staff.id"
@@ -121,7 +121,7 @@ const bottomStaff = computed(() =>
 
       <!-- Bottom Level -->
       <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-2 mt-2"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-1 mt-1"
       >
         <div
           v-for="staff in bottomStaff"
